@@ -4,7 +4,8 @@ RUN apt-get update && apt-get install -y \
     wget \
     tzdata \
     openjdk-8-jdk \
-    curl
+    curl \
+    apt-utils
 
 ENV TZ=Europe/Berlin
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone

@@ -1,0 +1,7 @@
+cluster.name: custom-cluster
+network.host: 0.0.0.0
+node.name: node1
+http.cors.enabled: true
+http.cors.allow-origin: "*"
+path.repo:
+- /tmp

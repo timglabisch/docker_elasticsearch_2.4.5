@@ -26,4 +26,4 @@ jobs:
             -   name: Build and push
                 if: startsWith(github.ref, 'refs/tags/')
                 run: |
-                    docker buildx build --platform linux/amd64 -t timglabisch/elasticsearch254:${{ steps.vars.outputs.tag }} --push .
+                    docker buildx build --platform linux/amd64 -t timglabisch/elasticsearch245:${{ steps.vars.outputs.tag }} --push .
